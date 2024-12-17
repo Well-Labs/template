@@ -7,8 +7,8 @@ server = app.server
 
 app.layout = ddk.App([
     ddk.Header([
-        ddk.Logo(src=app.get_relative_path('/assets/logo.png')), #assets/logo.svg
-        ddk.Title('Analytics'),
+        ddk.Logo(src=app.get_relative_path('/assets/logo.png')),
+        ddk.Title('Well Labs'),
         ddk.Menu([
             html.Div(
                 dcc.Link(
@@ -22,4 +22,6 @@ app.layout = ddk.App([
 ])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(
+        debug=True,
+        )
