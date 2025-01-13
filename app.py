@@ -1,7 +1,12 @@
 from dash import Dash, dcc, html, page_container, page_registry
 import dash_design_kit as ddk
 
-app = Dash(__name__, suppress_callback_exceptions = True, use_pages=True)
+app = Dash(
+    __name__, 
+    suppress_callback_exceptions = True, 
+    use_pages=True,
+    assets_folder='assets'
+    )
 
 server = app.server
 
